@@ -16,6 +16,7 @@ import (
 )
 
 func TestFakeTime(t *testing.T) {
+	t.Skip("genuine faketime test not supported with Batsky patch")
 	if runtime.GOOS == "windows" {
 		t.Skip("faketime not supported on windows")
 	}
